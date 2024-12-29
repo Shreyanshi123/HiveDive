@@ -20,8 +20,15 @@ export default function LeftSide() {
                         <span> Connections</span>
                         <span>Grow your network</span>
                     </div>
+                    <img src="/images/widget-icon.svg" alt="" />
                 </a>
             </Widget>
+            <Item>
+                <span>
+                    <img src="/images/item-icon.svg" alt="" />
+                    Bookmarks
+                </span>
+            </Item>
         </ProfileCard>
     </Container>
   )
@@ -79,4 +86,46 @@ color:rgb(114, 47, 28);
 font-weight:500;
 `;
 
-const Widget = styled.div``;
+const Widget = styled.div`
+background-color:#F0E1D2;
+color:rgb(114, 47, 28);
+font-weight:600;
+border-bottom: 1px solid rgb(114, 47, 28);
+padding-top: 12px;
+padding-bottom:12px;
+width:100%;
+a{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:4px 12px;
+}
+a>div{
+display:flex;
+flex-direction:column;
+text-align:left;
+}
+a>div>span{
+background-color:#F0E1D2;
+font-size:15px;
+line-height:1.33;
+}
+:hover{
+background-color:#fef4eb;
+}
+`;
+const Item = styled.a`
+background-color:#F0E1D2;
+border-color:rgb(114, 47, 28);
+color: rgb(114,47,28);
+font-weight:600;
+padding:12px;
+:hover{
+background-color:#fef4eb;
+}
+span{
+background-color:#F0E1D2;
+display: flex;
+align-items:center;
+}
+`;
