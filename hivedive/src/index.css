@@ -5,7 +5,7 @@ body{
 :root,
 body,
 html{
-    background-color: #F0E1D2;
+    background-color: #fef4eb;
     box-sizing: border-box;
 }
 
@@ -16,6 +16,8 @@ div,h1,h2,h3,h4,h5,h6,header,html,i,img,label,li,nav,p,small,span,ul{
     outline: none;
     font-size: 100%;
     vertical-align: baseline;
-    background: #FFFFFF;
+    background: #fef4eb;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
