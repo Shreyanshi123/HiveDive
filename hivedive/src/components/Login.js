@@ -1,7 +1,13 @@
 import styled from "styled-components";
-import React from 'react'
+import React from 'react';
+import {signInAPI} from './actions'
+import { connect } from "react-redux";
 
-export default function Login(props) {
+function Login(props) {
+    const handleClick =()=>{
+        props.signIn();
+    }
+
   return (
     <Container>
         <Nav>
@@ -19,7 +25,7 @@ export default function Login(props) {
                 <img src="images/Business meeting(1).png" alt="" />
             </MainSec>
                 <Form>
-                <Google>
+                <Google onClick={handleClick}>
                    <img src="/images/google.png" alt="" /> 
                    Sign in with Google
                 </Google>
@@ -154,3 +160,13 @@ transition-duration:169ms;
 background-color:#E6E2D3;
 }
 `;
+
+const mapStateToProps =(state) =>{
+    return {};
+};
+
+const mapDispatchToProps = (dispatch)=>({
+    signIn: ()=> dispatch(signInAPI())
+});
+
+export default connect(mapStateToProps,mapDispatchToProps)(Login);

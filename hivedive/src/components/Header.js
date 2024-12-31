@@ -73,6 +73,7 @@ export default function Header(props) {
   )
 }
 const Container = styled.div`
+z-index:100;
 width:100vw;
 height:9vh;
 background-color:#8E4F3D ;
@@ -109,14 +110,14 @@ max-width:280px;
 input{
 border:none;
 box-shadow:none;
-background-color: #E6E2D3 ;
+background-color:white ;
 border-radius:2px;
 padding:0px 9px 0px 4px;
 line-height:1.75;
 font-weight:200;
 font-size:16px;
 border-color:#8E4F3D;
-height:29px;
+height:27px;
 }
 }
 `;
@@ -126,7 +127,7 @@ left:-30px;
 margin:0;
 border-radius:0 2px 2px 0;
 box-shadow:none;
-
+height:31px;
 display:flex;
 justify-content:center;`
 ;
@@ -178,6 +179,9 @@ line-height:1.5;
 min-width:80px;
 position:relative;
 text-decoration:none;
+img{
+height:31px;
+}
 }
 span{
 background-color:#8E4F3D;
@@ -213,6 +217,7 @@ border-radius:50%;
 a>img{
 width:40px;
 border-radius:50%;
+height:31px;
 }
 span{
 display:flex;
@@ -220,6 +225,7 @@ align-items:center;
 }
 span>img{
 margin-left:3px;
+height:20px
 }
 &:hover{
 ${SignOut}{

@@ -31,6 +31,7 @@ text-decoration:underline;
 text-align:center;
 display:flex;
 justify-content:center;
+margin-top:10px;
 h5{
 margin-right:10px;
 a{
@@ -45,14 +46,17 @@ padding:5px 0px;
 }`;
 
 const Layout = styled.div`
+z-index:0;
 padding:15px 0px;
 display:grid;
 font-color:#8E4F3D;
-grid-template-areas :"LeftSide Main RightSide";
+width:90vw;
+// margin:auto;
+grid-template-areas :"leftside main rightside";
 grid-template-columns:minmax(0,5fr) minmax(0,12fr) minmax(300px,7fr);
 column-gap:25px;
 row-gap:25px;
-margin:25px 0px;
+margin:25px auto;
 @media(max-width:768px){
 display:flex;
 flex-direction:column;

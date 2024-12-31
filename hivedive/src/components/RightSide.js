@@ -28,12 +28,19 @@ export default function RightSide() {
             </div>
           </li>
         </FeedList>
+        <Recommendation> View all recommendations
+        <img src="images/right.png" alt="" />
+        </Recommendation>
        </Follow>
+       <Banner>
+          <img src="images/cropped_hivedive_banner(1).png" alt="" />
+        </Banner>
     </Container>
   )
 }
 const Container = styled.div`
-grid-area:Rightside;
+grid-area:rightside;
+
 `;
 const Follow = styled.div`
 text-align:center;
@@ -105,4 +112,23 @@ background-repeat: no-repeat;
 width:40px;
 height:40px;
 margin-right:9px;
+`;
+
+const Recommendation = styled.div`
+background-color:#F0E1D2;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:5px;
+font-size:18px;
+font-weight:600;
+img{
+margin-left:5px;
+}
+`;
+const Banner =styled(Follow)`
+img{
+width:100%;
+height:100%;
+}
 `;
