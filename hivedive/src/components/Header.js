@@ -147,7 +147,7 @@ background-color:#8E4F3D;
 display:flex;
 flex-wrap:nowrap;
 list-style-type:none;
-
+z-index:100;
 
 .active {
 span:after{

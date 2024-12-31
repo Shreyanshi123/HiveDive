@@ -30,6 +30,20 @@ export default function LeftSide() {
                 </span>
             </Item>
         </ProfileCard>
+        <CommunityCard>
+            <a>
+                <span>Groups</span>
+            </a>
+            <a>
+                <span>Events </span>
+            </a>
+            <a>
+                <span>Follow Hashtags</span>
+            </a>
+            <a>
+                <span>Discover More</span>
+            </a>
+        </CommunityCard>
     </Container>
   )
 }
@@ -127,5 +141,23 @@ span{
 background-color:#F0E1D2;
 display: flex;
 align-items:center;
+}
+`;
+
+const CommunityCard = styled(ProfileCard)`
+font-weight:600;
+padding:8px 0 8px;
+display:flex;
+flex-direction:column;
+align-items:start;
+a>span{
+background-color:#F0E1D2;
+}
+a{
+color: rgb(114,47,28);
+padding: 4px 12px 4px 12px;
+:hover{
+color:black;
+ }
 }
 `;
